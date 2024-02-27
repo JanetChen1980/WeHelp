@@ -1,0 +1,21 @@
+.item {
+    width: 100%;
+    font-size: 16pt;
+    color: yellow;
+    border-bottom: 1px solid rgb(99, 171, 238);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.answer {
+    font-size: 14pt;
+    color: white;
+    word-wrap: break-word;
+}
+
+.borderstype {
+    border-radius: 10px;
+    border: 1px solid rgb(92, 50, 241);
+    padding: 10px;
+}
