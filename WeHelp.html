@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeHelp Resume</title>
-    <link rel="stylesheet" href="WeHelp.css" />
+    <link rel="stylesheet" type="text/css" href="WeHelp.css" />
 </head>
 
 <body>
-    <div style="display: flex; justify-content: center;">
-        <svg width="1024" height="1300" viewBox="0 0 1024 1300">
+    <div class="container">
+        <svg viewBox="0 0 1280 2000" class="svg-container">
             <defs>
                 <linearGradient id="bg_color">
                     <stop offset="0.1" stop-color="#64D4EF" />
@@ -79,13 +79,19 @@
                         但擔心等到下一期可能會失去目前的學習熱情。無論最終申請是否成功，決定至少嘗試一下，因為開始行動總比什麼都不做要好。
                     </div>
                 </div>
+                <div id="time" style="text-align: center; color: blue;"></div>
             </foreignObject>
         </svg>
     </div>
 
 
     <script>
-
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        var timeString = "現在時間: " + hours + ":" + minutes;
+        document.getElementById("time").innerHTML = timeString;
     </script>
 
 </body>
