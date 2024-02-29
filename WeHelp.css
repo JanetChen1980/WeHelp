@@ -21,20 +21,18 @@
 }
 
 .container {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.svg-container {
-    width: 1280px;
-}
-
-/*螢幕小於480，套用此區CSS*/
 @media(max-width: 480px) {
     .container {
         width: 380px;
+    }
+
+    svg {
+        height: 3500px;
     }
 }
